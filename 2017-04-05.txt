@@ -1,0 +1,4 @@
+Filesystem                   Size  Used Avail Use% Mounted on
+/dev/mapper/vg_lnmp-lv_root   18G  2.6G   14G  16% /
+tmpfs                        504M     0  504M   0% /dev/shm
+/dev/sda1                    485M   31M  430M   7% /boot

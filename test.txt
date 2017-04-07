@@ -1,0 +1,10 @@
+web01[192.168.2.100]
+httpd            ok
+tomcat               ok
+sendmail               ok
+web02[192.168.2.101]
+httpd            ok
+postfix               ok
+web03[192.168.2.102]
+mysqld            ok
+httpd               ok
