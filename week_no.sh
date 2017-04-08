@@ -2,7 +2,15 @@
 source ~/.bash_profile
 
 ##定义参数
-day_no=$1
+day_no=`date -d"-1 day" +%Y%m%d`
+if [ $# -eq 1 ];then
+ day_no=$1
+elif [ $# -eq 0 ];then
+ echo "O.K"
+else
+ echo "参数错误:请输入0到1个参数"
+ exit 1
+fi
 year_no=${day_no:0:4}
 day_no_30_d=`date -d"${day_no} -30 days" +%Y%m%d`
 day_nos=`date -d"${day_no}" +%s`
